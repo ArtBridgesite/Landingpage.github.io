@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ArtBridge - Affordable DIY Craft Experience Online</title>
+  <title>artbrige - Affordable DIY Craft Experience</title>
   <style>
     /* Increase base font size and update overall styling */
     body { 
@@ -84,12 +84,14 @@
       color: #0044cc;
       font-size: 2.5em; /* Bigger headings */
     }
-    /* Bold Value Proposition Section */
+    /* Make Value Proposition section stand out and bold the text */
     #value-prop {
       background-color: #f0f8ff;
       border: 2px solid #0044cc;
       padding: 40px;
       border-radius: 8px;
+    }
+    #value-prop p {
       font-weight: bold;
     }
     .flex { 
@@ -101,13 +103,6 @@
       flex: 1;
       margin: 20px;
       min-width: 250px;
-    }
-    /* Team member styling */
-    .team-member {
-      margin-bottom: 20px;
-    }
-    .team-member p {
-      margin: 5px 0;
     }
     footer { 
       text-align: center;
@@ -132,7 +127,7 @@
   <!-- Navigation with Language Toggle -->
   <header>
     <nav>
-      <div class="logo" id="logo" style="font-size: 1.8em; font-weight: bold;">ArtBridge</div>
+      <div class="logo" id="logo" style="font-size: 1.8em; font-weight: bold;">artbrige</div>
       <ul class="nav-links">
         <li><a href="#value-prop" id="navHome">Home</a></li>
         <li><a href="#benefits" id="navBenefits">Benefits</a></li>
@@ -158,7 +153,7 @@
   <section id="value-prop">
     <h2 id="valuePropTitle">Our Value Proposition</h2>
     <p id="valuePropText">
-      ArtBridge brings the popular physical craft store experience online. We provide bundled DIY toolkits, raw materials, and detailed tutorials to help you save on costs and enjoy a flexible crafting experience.
+      artbrige brings the popular physical craft store experience online. We provide bundled DIY toolkits, raw materials, and detailed tutorials to help you save on costs and enjoy a flexible crafting experience.
     </p>
   </section>
 
@@ -196,7 +191,7 @@
 
   <!-- Benefits Section with Additional Insights -->
   <section id="benefits">
-    <h2 id="benefitsTitle">Why Choose ArtBridge?</h2>
+    <h2 id="benefitsTitle">Why Choose artbrige?</h2>
     <div class="flex">
       <div>
         <h3 id="benefitsConsumerTitle">For Consumers</h3>
@@ -224,7 +219,7 @@
     <h2 id="testimonialsTitle">Testimonials</h2>
     <div class="testimonial">
       <p id="testimonial1">
-        "ArtBridge allowed me to enjoy crafting from the comfort of my home at a very affordable price!" - Alex, Craft Enthusiast
+        "artbrige allowed me to enjoy crafting from the comfort of my home at a very affordable price!" - Alex, Craft Enthusiast
       </p>
     </div>
     <div class="testimonial">
@@ -239,34 +234,38 @@
     </div>
     <div class="credibility">
       <h3 id="credibilityAdvisor">Authority Advisor</h3>
-      <p id="credibilityAdvisorText">Aaron</p>
+      <p id="credibilityAdvisorText">
+        Advised by Aaron.
+      </p>
     </div>
   </section>
 
-  <!-- Team Section with Emails and Descriptions -->
+  <!-- Team Section -->
   <section id="team">
     <h2 id="teamTitle">Our Team</h2>
-    <p id="teamDescription">A passionate team dedicated to delivering the best online crafting experience.</p>
+    <p id="teamDescription">
+      A passionate team dedicated to delivering the best online crafting experience.
+    </p>
     <div class="team-members">
       <div class="team-member">
         <h4 id="teamMember1">Yutong Yang</h4>
-        <p>Email: yangyt77sh@berkeley.edu</p>
-        <p>Expert in product design and digital marketing with extensive experience in online craft platforms.</p>
+        <p>Email: <a href="mailto:yangyt77sh@berkeley.edu">yangyt77sh@berkeley.edu</a></p>
+        <p>Expert in online marketing, product design, and project management with extensive experience from Berkeley.</p>
       </div>
       <div class="team-member">
         <h4 id="teamMember2">Emilie Yajima</h4>
-        <p>Email: emilie1217@berkeley.edu</p>
-        <p>Specialist in customer engagement and community building with a background in creative arts and social media.</p>
+        <p>Email: <a href="mailto:emilie1217@berkeley.edu">emilie1217@berkeley.edu</a></p>
+        <p>Skilled in creative design, user experience, and digital communication, with a strong background in art direction and branding.</p>
       </div>
       <div class="team-member">
         <h4 id="teamMember3">Boya Cui</h4>
-        <p>Email: cby@berkeley.edu</p>
-        <p>Entrepreneur with deep expertise in traditional crafts; owns a successful offline DIY store in China.</p>
+        <p>Email: <a href="mailto:cby@berkeley.edu">cby@berkeley.edu</a></p>
+        <p>Entrepreneurial leader with deep knowledge of DIY culture; owns a successful brick-and-mortar DIY store in China, bringing valuable real-world insights to our platform.</p>
       </div>
     </div>
   </section>
 
-  <!-- Call-to-Action Section with Stats Counter -->
+  <!-- Call-to-Action Section -->
   <section id="cta">
     <h2 id="ctaTitle">Ready to Transform Your Crafting Experience?</h2>
     <div>
@@ -274,9 +273,9 @@
       <a href="#supplier-register" class="btn" id="ctaButton2">I'm a Merchant/Supplier</a>
       <a href="#explore" class="btn" id="ctaButton3">Learn More</a>
     </div>
-    <!-- Stats Button -->
+    <!-- Stats Button and Display -->
     <button class="stats-button" id="statsButton">View Stats</button>
-    <div id="statsDisplay" style="margin-top:20px; font-weight:bold;"></div>
+    <div id="statsDisplay" style="margin-top:20px; font-size:1.2em;"></div>
   </section>
 
   <!-- Footer -->
@@ -287,40 +286,21 @@
       <a href="#benefits" id="footerNavBenefits">Benefits</a> | 
       <a href="#contact" id="footerNavContact">Contact Us</a>
     </div>
-    <p id="footerCopy">&copy; 2025 ArtBridge. All rights reserved.</p>
+    <p id="footerCopy">&copy; 2025 artbrige. All rights reserved.</p>
   </footer>
 
   <script>
-    // ---------------------------
-    // Stats Counter using localStorage
-    // ---------------------------
-    // Increment page views on each page load
-    let pageViews = parseInt(localStorage.getItem('pageViews')) || 0;
-    pageViews++;
-    localStorage.setItem('pageViews', pageViews);
-
-    // Initialize click counter if not present
-    let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
-
-    // Add click event listener to all buttons (excluding stats button)
-    document.querySelectorAll('a.btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        clickCount++;
-        localStorage.setItem('clickCount', clickCount);
-      });
-    });
-
-    // Function to update stats display
-    function updateStatsDisplay() {
-      const statsDisplay = document.getElementById('statsDisplay');
-      let pv = localStorage.getItem('pageViews') || 0;
-      let cc = localStorage.getItem('clickCount') || 0;
-      statsDisplay.textContent = "Page Views: " + pv + " | Button Clicks: " + cc;
+    // Initialize counters using localStorage for persistent data
+    if (!localStorage.getItem("pageViews")) {
+      localStorage.setItem("pageViews", "0");
     }
+    if (!localStorage.getItem("clickCount")) {
+      localStorage.setItem("clickCount", "0");
+    }
+    // Increment page views on load
+    localStorage.setItem("pageViews", parseInt(localStorage.getItem("pageViews")) + 1);
 
-    // ---------------------------
     // Translation dictionaries for English and Chinese
-    // ---------------------------
     const translations = {
       en: {
         navHome: "Home",
@@ -334,7 +314,7 @@
         heroButton1: "Get Started",
         heroButton2: "Learn More",
         valuePropTitle: "Our Value Proposition",
-        valuePropText: "ArtBridge brings the popular physical craft store experience online. We provide bundled DIY toolkits, raw materials, and detailed tutorials to help you save on costs and enjoy a flexible crafting experience.",
+        valuePropText: "artbrige brings the popular physical craft store experience online. We provide bundled DIY toolkits, raw materials, and detailed tutorials to help you save on costs and enjoy a flexible crafting experience.",
         needsTitle: "Understanding Your Needs",
         needsConsumerTitle: "For Consumers",
         needsConsumerJob1: "Experience affordable online crafting sessions",
@@ -349,17 +329,17 @@
         needsGain2: "Flexible and convenient learning environment",
         needsGain3: "High-quality DIY kits with expert guidance",
         needsGain4: "For merchants: Reduced overhead and broader customer reach",
-        benefitsTitle: "Why Choose ArtBridge?",
+        benefitsTitle: "Why Choose artbrige?",
         benefitsConsumerTitle: "For Consumers",
         benefitsConsumerText: "Enjoy an interactive crafting experience at home with high-quality, curated DIY kits and tutorials. Our stakeholder interviews revealed that personalized video tutorials, real-time support, and a vibrant online community significantly enhance the overall experience. Consumers appreciate having all necessary materials bundled together, saving time and effort in sourcing quality supplies.",
         benefitsSupplierTitle: "For Merchants & Suppliers",
         benefitsSupplierText: "Reduce overhead costs by moving operations online and expand your customer base with affordable DIY kit procurement. Stakeholder feedback highlights that detailed analytics on customer preferences, streamlined logistics, and real-time inventory adjustments are crucial. Suppliers value the ability to continuously improve their offerings based on direct user feedback.",
         testimonialsTitle: "Testimonials",
-        testimonial1: "\"ArtBridge allowed me to enjoy crafting from the comfort of my home at a very affordable price!\" - Alex, Craft Enthusiast",
+        testimonial1: "\"artbrige allowed me to enjoy crafting from the comfort of my home at a very affordable price!\" - Alex, Craft Enthusiast",
         testimonial2: "\"The online platform drastically reduced our operating costs and helped us reach a wider audience.\" - Maria, Store Owner",
         testimonial3: "\"The professional DIY kits and tutorials make crafting fun and easy, increasing customer loyalty.\" - John, Supplier Representative",
         credibilityAdvisor: "Authority Advisor",
-        credibilityAdvisorText: "Aaron",
+        credibilityAdvisorText: "Advised by Aaron.",
         teamTitle: "Our Team",
         teamDescription: "A passionate team dedicated to delivering the best online crafting experience.",
         ctaTitle: "Ready to Transform Your Crafting Experience?",
@@ -370,9 +350,10 @@
         footerNavHowItWorks: "How It Works",
         footerNavBenefits: "Benefits",
         footerNavContact: "Contact Us",
-        footerCopy: "&copy; 2025 ArtBridge. All rights reserved.",
+        footerCopy: "&copy; 2025 artbrige. All rights reserved.",
         statsButton: "View Stats",
-        statsMessage: ""
+        statsViewsLabel: "Page Views",
+        statsClicksLabel: "Clicks"
       },
       zh: {
         navHome: "首页",
@@ -386,7 +367,7 @@
         heroButton1: "马上体验",
         heroButton2: "了解详情",
         valuePropTitle: "我们的价值主张",
-        valuePropText: "ArtBridge 将热门实体手工店的体验搬到线上。我们提供打包好的DIY工具、原材料和详细教程，帮助您大幅节省成本，享受灵活的手作体验。",
+        valuePropText: "artbrige 将热门实体手工店的体验搬到线上。我们提供打包好的DIY工具、原材料和详细教程，帮助您大幅节省成本，享受灵活的手作体验。",
         needsTitle: "了解您的需求",
         needsConsumerTitle: "面向消费者",
         needsConsumerJob1: "体验经济实惠的线上手作活动",
@@ -401,17 +382,17 @@
         needsGain2: "灵活便捷的学习环境",
         needsGain3: "高品质DIY套装和专业指导",
         needsGain4: "对于商家：降低运营成本，扩大客户群",
-        benefitsTitle: "为什么选择 ArtBridge？",
+        benefitsTitle: "为什么选择 artbrige？",
         benefitsConsumerTitle: "面向消费者",
-        benefitsConsumerText: "在家也能享受互动手作体验，使用高品质、精心策划的DIY套装和教程。我们的访谈表明，个性化的视频教程、实时支持以及充满活力的线上社区大大提升了整体体验。消费者非常欣赏将所有必需材料打包在一起的便利，省去了寻找优质原材料的麻烦。",
+        benefitsConsumerText: "在家也能享受互动手作体验，使用高品质、精心策划的DIY套装和教程。我们的访谈表明，个性化的视频教程、实时支持以及充满活力的线上社区大大提升了整体体验。消费者也非常欣赏将所有必需材料打包在一起的便利，省去了寻找优质原材料的麻烦。",
         benefitsSupplierTitle: "面向商家及供应商",
         benefitsSupplierText: "通过线上运营降低租金和人力成本，同时扩大客户群。访谈中显示，商家非常看重客户偏好的详细数据、简化的物流流程以及实时调整库存的能力。该平台使供应商能够根据用户反馈不断优化产品。",
         testimonialsTitle: "用户评价",
-        testimonial1: "\"ArtBridge 让我在家也能以实惠的价格享受手作乐趣！\" - 小红，手作爱好者",
+        testimonial1: "\"artbrige 让我在家也能以实惠的价格享受手作乐趣！\" - 小红，手作爱好者",
         testimonial2: "\"线上平台大幅降低了我们的运营成本，让我们接触到更多的客户。\" - 阿美，店主",
         testimonial3: "\"专业的DIY套装和教程让手作变得简单有趣，客户回头率非常高。\" - 小明，供应商代表",
         credibilityAdvisor: "权威顾问",
-        credibilityAdvisorText: "Aaron",
+        credibilityAdvisorText: "由 Aaron 提供顾问意见。",
         teamTitle: "我们的团队",
         teamDescription: "一支充满热情的团队，致力于提供最佳的线上手作体验。",
         ctaTitle: "准备好体验全新的手作之旅了吗？",
@@ -422,9 +403,10 @@
         footerNavHowItWorks: "如何运作",
         footerNavBenefits: "平台优势",
         footerNavContact: "联系我们",
-        footerCopy: "&copy; 2025 ArtBridge. 版权所有。",
+        footerCopy: "&copy; 2025 artbrige. 版权所有。",
         statsButton: "查看统计",
-        statsMessage: ""
+        statsViewsLabel: "浏览量",
+        statsClicksLabel: "点击量"
       }
     };
 
@@ -483,7 +465,16 @@
       document.getElementById("footerNavContact").textContent = t.footerNavContact;
       document.getElementById("footerCopy").innerHTML = t.footerCopy;
       document.getElementById("statsButton").textContent = t.statsButton;
+      // Update stats display if already shown
       updateStatsDisplay();
+    }
+
+    // Function to update the stats display with real counter values
+    function updateStatsDisplay() {
+      const t = translations[currentLang];
+      const views = localStorage.getItem("pageViews");
+      const clicks = localStorage.getItem("clickCount");
+      document.getElementById("statsDisplay").textContent = `${t.statsViewsLabel}: ${views} | ${t.statsClicksLabel}: ${clicks}`;
     }
 
     // Toggle language when the language button is clicked
@@ -492,34 +483,13 @@
       updateLanguage();
     });
 
-    // ---------------------------
-    // Stats Counter using localStorage
-    // ---------------------------
-    // Increment page views on each page load
-    let pageViews = parseInt(localStorage.getItem('pageViews')) || 0;
-    pageViews++;
-    localStorage.setItem('pageViews', pageViews);
-
-    // Initialize click counter if not present
-    let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
-
-    // Add click event listener to all buttons (excluding stats button)
-    document.querySelectorAll('a.btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        clickCount++;
-        localStorage.setItem('clickCount', clickCount);
-      });
+    // Stats button: increment click counter and update display
+    document.getElementById("statsButton").addEventListener("click", function() {
+      localStorage.setItem("clickCount", parseInt(localStorage.getItem("clickCount")) + 1);
+      updateStatsDisplay();
     });
 
-    // Function to update stats display
-    function updateStatsDisplay() {
-      const statsDisplay = document.getElementById('statsDisplay');
-      let pv = localStorage.getItem('pageViews') || 0;
-      let cc = localStorage.getItem('clickCount') || 0;
-      statsDisplay.textContent = "Page Views: " + pv + " | Button Clicks: " + cc;
-    }
-
-    // Initialize texts
+    // Initialize texts and stats display
     updateLanguage();
   </script>
 
